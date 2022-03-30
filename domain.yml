@@ -1,0 +1,82 @@
+version: "3.0"
+
+intents:
+  - greet
+  - end_conversation
+  - bot_challenge
+  - company_info
+  - get_hired
+
+responses:
+  utter_greet:
+  - text: "Hey! I'm BlackBox assistant."
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, created by BlackBox, powered by Rasa."
+
+  utter_info:
+  - text: "We are BlackBox, company that delivers machine learning and deep learning solutions."
+  
+  utter_hire:
+  - text: "Please provide contact details."
+
+  utter_howcanhelp:
+  - text: "How may I help you?"
+
+  utter_ask_name:
+  - text: "Can I get your name?"
+
+  utter_ask_email:
+  - text: "What is your email address?"
+
+  utter_ask_phone:
+  - text: "What is your phone number?"
+
+  utter_contactcollected:
+  - text: "I colected your data, you will be contacted shortly"
+
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+        - active_loop: get_contact_form
+          requested_slot: name
+  email:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+        - active_loop: get_contact_form
+          requested_slot: email
+  phone: 
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: from_text
+      conditions:
+        - active_loop: get_contact_form
+          requested_slot: phone
+
+forms:
+  get_contact_form:
+    required_slots:
+      - name
+      - email
+      - phone
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+actions:
+- action_send_contact_info
