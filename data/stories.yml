@@ -18,3 +18,21 @@ stories:
   - action: utter_contactcollected
   - intent: end_conversation
   - action: utter_goodbye 
+
+
+- story: get inquiry for chatbot
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_howcanhelp
+  - intent: chatbot_info
+  - action: utter_chatbot_explanation
+  - action: utter_howcanhelp
+  - intent: get_hired
+  - action: get_contact_form
+  - active_loop: get_contact_form
+  - active_loop: null
+  - action: action_send_contact_info
+  - action: utter_contactcollected
+  - intent: end_conversation
+  - action: utter_goodbye 

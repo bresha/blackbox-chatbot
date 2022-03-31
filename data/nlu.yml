@@ -50,6 +50,8 @@ nlu:
     - do you offer ML products?
     - I have ML problem to solve
     - can you offer custom solutions?
+    - I need a chatbot for my company
+    - we would like to implement chatbot to our website
 
 - intent: out_of_scope
   examples: |
@@ -57,3 +59,11 @@ nlu:
     - What is 2 + 2?
     - Who's the US President?
     - How are you?
+
+- intent: chatbot_info
+  examples: |
+    - can you tell me more about chatbots?
+    - what are chatbots?
+    - what can chatbot do for me?
+    - what are posible chatbot channels?
+    - what can you about chatbot?
