@@ -52,6 +52,14 @@ nlu:
     - can you offer custom solutions?
     - I need a chatbot for my company
     - we would like to implement chatbot to our website
+    - I want you to work with my data
+    - I have a lot of data to work on
+    - I need data solution for my company
+    - We need data solution
+    - We need optimization
+    - I need to optimize my energy consumption
+    - I need my retail prices fixed
+    - I need optimization solution for my business
 
 - intent: out_of_scope
   examples: |
@@ -67,3 +75,19 @@ nlu:
     - what can chatbot do for me?
     - what are posible chatbot channels?
     - what can you about chatbot?
+
+- intent: data_info
+  examples: |
+    - what can you do with my data?
+    - what data solutions can you do?
+    - what is machine learning?
+    - can you track changes in my data?
+
+
+- intent: optimization_info
+  examples: |
+    - what can you do with my optimization?
+    - what kind of optimizations can you do?
+    - what are optimizations?
+    - tell me what kind of optimizations can you do?
+    - I want to know more about optimizations
