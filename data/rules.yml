@@ -25,3 +25,21 @@ rules:
   steps:
   - intent: out_of_scope
   - action: utter_out_of_scope
+
+- rule: Provide chatbot information
+  steps:
+  - intent: chatbot_info
+  - action: utter_chatbot_explanation
+  - action: utter_howcanhelp
+
+- rule: Provide data information
+  steps:
+  - intent: data_info
+  - action: utter_data_explanation
+  - action: utter_howcanhelp
+
+- rule: Provide optimization information
+  steps:
+  - intent: optimization_info
+  - action: utter_optimization_info
+  - action: utter_howcanhelp
