@@ -38,6 +38,9 @@ responses:
   utter_contactcollected:
   - text: "I colected your data, you will be contacted shortly"
 
+  utter_out_of_scope:
+  - text: Sorry, I can't handle that request.
+
 
 slots:
   name:
