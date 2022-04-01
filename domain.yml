@@ -6,6 +6,7 @@ intents:
   - bot_challenge
   - company_info
   - get_hired
+  - out_of_scope
   - chatbot_info
   - data_info
   - optimization_info
