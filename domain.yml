@@ -47,7 +47,7 @@ responses:
   - text: "Sorry, I can't handle that request."
 
   utter_chatbot_explanation:
-  - text: "Chatbot can be your business assistant that is available 24/7 and can result in a return of investment up to 180%. They are available on your website, app, facebook, whatsup..."
+  - text: "Chatbot can be your business assistant that is available 24/7 and can result in a return of investment up to 180%. They are available on your website, mobile app, Facebook Mesenger, WhatsApp..."
 
   utter_data_explanation:
   - text: "Your data should drive you business forward. With machine learning, branch of artificial intelligence, you can get insights from your data. Also you can use your data for decision processes in your company as we can track changes in your data and notify you of changes."
