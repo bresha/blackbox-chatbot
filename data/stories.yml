@@ -7,6 +7,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_howcanhelp
+  - intent: what_can_do
+  - action: utter_what_can_do
+  - action: utter_howcanhelp
   - intent: company_info
   - action: utter_info
   - action: utter_howcanhelp
@@ -25,6 +28,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_howcanhelp
+  - intent: what_can_do
+  - action: utter_what_can_do
+  - action: utter_howcanhelp
   - intent: chatbot_info
   - action: utter_chatbot_explanation
   - action: utter_howcanhelp
@@ -41,6 +47,9 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: utter_howcanhelp
+  - intent: what_can_do
+  - action: utter_what_can_do
   - action: utter_howcanhelp
   - intent: data_info
   - action: utter_data_explanation
@@ -59,6 +68,9 @@ stories:
   - intent: greet
   - action: utter_greet
   - action: utter_howcanhelp
+  - intent: what_can_do
+  - action: utter_what_can_do
+  - action: utter_howcanhelp
   - intent: optimization_info
   - action: utter_optimization_info
   - action: utter_howcanhelp
@@ -69,4 +81,4 @@ stories:
   - action: action_send_contact_info
   - action: utter_contactcollected
   - intent: end_conversation
-  - action: utter_goodbye 
+  - action: utter_goodbye

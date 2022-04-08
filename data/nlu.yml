@@ -83,7 +83,6 @@ nlu:
     - what is machine learning?
     - can you track changes in my data?
 
-
 - intent: optimization_info
   examples: |
     - what can you do with my optimization?
@@ -91,3 +90,10 @@ nlu:
     - what are optimizations?
     - tell me what kind of optimizations can you do?
     - I want to know more about optimizations
+
+- intent: what_can_do
+  examples: |
+    - what can you do?
+    - what are chat options you have?
+    - what can we chat about?
+    - about what can we chat about?

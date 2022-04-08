@@ -43,3 +43,9 @@ rules:
   - intent: optimization_info
   - action: utter_optimization_info
   - action: utter_howcanhelp
+
+- rule: Provide chat options
+  steps:
+  - intent: what_can_do
+  - action: utter_what_can_do
+  - action: utter_howcanhelp

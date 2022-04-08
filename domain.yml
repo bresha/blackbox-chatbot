@@ -10,6 +10,7 @@ intents:
   - chatbot_info
   - data_info
   - optimization_info
+  - what_can_do
 
 responses:
   utter_greet:
@@ -53,6 +54,9 @@ responses:
 
   utter_optimization_info:
   - text: "Your business can be optimized to improve performance of your business. With artificial intelligence, you can get optimizations for determening retail prices, energy consumption and performance improvements."
+
+  utter_what_can_do:
+  - text: "We can chat about BlackBox, chatbots, data solutions and optimization or you can hire us."
 
 slots:
   name:
