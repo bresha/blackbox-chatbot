@@ -86,10 +86,10 @@ nlu:
 - intent: optimization_info
   examples: |
     - what can you do with my optimization?
-    - what kind of optimizations can you do?
-    - what are optimizations?
-    - tell me what kind of optimizations can you do?
-    - I want to know more about optimizations
+    - what kind of optimization can you do?
+    - what are optimization?
+    - tell me what kind of optimization can you do?
+    - I want to know more about optimization
 
 - intent: what_can_do
   examples: |

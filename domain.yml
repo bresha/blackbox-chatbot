@@ -53,7 +53,7 @@ responses:
   - text: "Your data should drive you business forward. With machine learning, branch of artificial intelligence, you can get insights from your data. Also you can use your data for decision processes in your company as we can track changes in your data and notify you of changes."
 
   utter_optimization_info:
-  - text: "Your business can be optimized to improve performance of your business. With artificial intelligence, you can get optimizations for determening retail prices, energy consumption and performance improvements."
+  - text: "Your business can be optimized to improve performance of your business. With artificial intelligence, you can get optimization for determening retail prices, energy consumption and performance improvements."
 
   utter_what_can_do:
   - text: "We can chat about BlackBox, chatbots, data solutions and optimization or you can hire us."
