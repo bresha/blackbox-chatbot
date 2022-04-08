@@ -9,6 +9,9 @@
 
 from typing import Any, Text, Dict, List
 import smtplib
+from dotenv import load_dotenv, find_dotenv
+import os
+
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -31,13 +34,16 @@ class ActionSendContactInfo(Action):
         # create message
         body = f"Please contact {name} via {email} or {phone}!"
 
+        # load env variables
+        load_dotenv(find_dotenv())
+
         # send message
         
-        gmail_user = 'blackbox.leads.chatbot@gmail.com'
-        gmail_password = 'd5NEfd8fxNAKc2b'
+        gmail_user = os.getenv('GMAIL_USER')
+        gmail_password = os.getenv('GMAIL_PASSWORD')
 
         sent_from = gmail_user
-        to = ['hrvoje.bresic@gmail.com']
+        to = [os.getenv('SEND_MAIL_TO')]
         subject = "Chatbot lead"
 
         email_text = """\
