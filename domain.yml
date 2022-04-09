@@ -98,4 +98,5 @@ session_config:
 
 
 actions:
+- validate_get_contact_form
 - action_send_contact_info
