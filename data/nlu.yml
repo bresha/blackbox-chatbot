@@ -60,6 +60,8 @@ nlu:
     - I need to optimize my energy consumption
     - I need my retail prices fixed
     - I need optimization solution for my business
+    - I would like to hire you
+    - I want to hire you
 
 - intent: out_of_scope
   examples: |
